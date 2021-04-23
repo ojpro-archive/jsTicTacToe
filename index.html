@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;
+        font-family: TSCu_Comic;
+      }
+      body {
+        background-color: #faf9f9;
+      }
+      .container {
+        text-align: center;
+      }
+      h1 {
+        margin: 1em auto;
+      }
+      .switch {
+        display: inline-block;
+        margin: 2em auto;
+        position: relative;
+        line-height: 34px;
+      }
+      .switch input[type="checkbox"] {
+        appearance: none;
+        background-color: #e2dfdf;
+        width: 60px;
+        height: 23px;
+        border-radius: 16px;
+        position: relative;
+        cursor: pointer;
+        margin: 6px;
+      }
+      .switch input[type="checkbox"]::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      }
+      .switch input[type="checkbox"]:checked::after {
+        left: auto;
+        right: 3px;
+      }
+      .switch input[type="checkbox"]:checked {
+        background-color: #1ac3f7;
+      }
+      .switch > * {
+        float: left;
+      }
+      .board{
+        width: 360px;
+        margin: 2em auto;
+      }
+      .board button{
+        float: left;
+        width: 30%;
+        height: 80px;
+        border: 1px solid #ffffff;
+        background-color: #1ac3f7;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bolder;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="switch">
+          <span>Play with Robot!</span>
+          <input type="checkbox" name="" id="switcher" onclick="playAuto()" />
+        </div>
+        <div class="board">
+          <button onclick="check(this)" id="b1"></button>
+
+          <button onclick="check(this)" id="b2"></button>
+
+          <button onclick="check(this)" id="b3"></button>
+
+          <button onclick="check(this)" id="b4"></button>
+
+          <button onclick="check(this)" id="b5"></button>
+
+          <button onclick="check(this)" id="b6"></button>
+
+          <button onclick="check(this)" id="b7"></button>
+
+          <button onclick="check(this)" id="b8"></button>
+
+          <button onclick="check(this)" id="b9"></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

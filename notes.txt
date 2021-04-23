@@ -1,0 +1,3 @@
+[bugs]:
+- check if the button already checked on robot version 
+- check for the switcher
